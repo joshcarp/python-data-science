@@ -4,7 +4,9 @@ snippets from comp10001 data science workshop
 This snippet is used to classify what language a text is by slicing up strings up into "trigramm"
 
 ## How does it work?
-1. Take a sentence in any particular language and slice it up into 3 letter slices:
+### Training
+
+- Take a sentence in any particular language and slice it up into 3 letter slices:
 
 "my name is josh" --> ["my ", "nam", " e i" "s j", "osh"] (this includes spaces)
 
@@ -14,7 +16,9 @@ and now do it for another language:
 
 you do this for enough "training data" of random text in a language, then you've got a list of commonly appearing "trigrams" in any language.
 
-Now When a different string is presented we can split it into trigrams and compare it to the similarity of what we've just created:
+
+### Testing
+- Now When a different string is presented we can split it into trigrams and compare it to the similarity of what we've just created:
 
 "my name is miriam" -->  ["my ", "nam" , "e i", "s m", "iri", "am"]
 
